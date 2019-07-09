@@ -20,7 +20,7 @@
 <div th:align="center">
 <form action="#" th:action="@{/corridas}" th:object="${corrida}" method="post">
 
-    <div class="alert alert-danger alert-dismissible" role="alert" th:if="${#fields.hasAnyErrors()}" th:fragment="alert">
+    <div style="width: 450px" class="alert alert-danger alert-dismissible" role="alert" th:if="${#fields.hasAnyErrors()}" th:fragment="alert">
         <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span></button>
         <th:block th:each="detailedError : ${#fields.detailedErrors()}">
             <div><i class="fa fa-exclamation-circle"></i>&nbsp;[[${detailedError.message}]].</div>
