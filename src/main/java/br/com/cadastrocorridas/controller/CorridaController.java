@@ -55,7 +55,7 @@ public class CorridaController {
         Optional<Motorista> motorista = motoristaRepository.findById(corrida.getMotorista().getId());
 
         if ("Inativo".equals(motorista.get().getStatus())){
-            result.addError(new ObjectError("motorista", "Motorista Intivo não pode realizar corrida!") );
+            result.addError(new ObjectError("motorista", "Motorista inativo não pode realizar corrida!") );
             return corridasForm(corrida);
 
         }
