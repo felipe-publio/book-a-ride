@@ -47,7 +47,7 @@ public class MotoristaController {
     public ModelAndView editar(@PathVariable("id") Motorista motorista) {
        Optional<Motorista> moto = repository.findById(motorista.getId());
         ModelAndView mv = motoristaForm(moto.get());
-        mv.addObject(moto.get);
+        mv.addObject(moto.get());
 
         return mv;
     }
