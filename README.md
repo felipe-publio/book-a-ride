@@ -1,4 +1,5 @@
-# FelipeCantonPublio_test
+# Corridas App!
+
 Teste de desenvolvimento web. Spring Boot + Java + Thymeleaf. 
 
 Projeto teste de desenvolvimento web com SpringBoot.
